@@ -1,0 +1,61 @@
+RewriteEngine on
+Options FollowSymLinks
+RewriteBase /
+
+RewriteRule	^nopage$			/index.php?page=nopage			[L]
+
+RewriteRule	^ab([0-9]+)$					/index.php?page=ab_oplata&id=$1			[L]
+RewriteRule	^ab([0-9]+)/abonentka$			/index.php?page=ab_abonentka&id=$1		[L]
+RewriteRule	^ab([0-9]+)/abonentka/$			/index.php?page=ab_abonentka&id=$1		[L]
+RewriteRule	^ab([0-9]+)/abonentka/([0-9]+)$	/index.php?page=ab_abReCalc&id=$1&re=$2 [L]
+RewriteRule	^ab([0-9]+)/uslugi$				/index.php?page=ab_uslugi&id=$1			[L]
+RewriteRule	^ab([0-9]+)/remont$	 			/index.php?page=ab_remont&id=$1		[L]
+RewriteRule	^ab([0-9]+)/remont/([0-9]+)$		/index.php?page=ab_remExec&id=$1&rem=$2	[L]
+RewriteRule	^ab([0-9]+)/remont/del$	 		/index.php?page=ab_remont&id=$1&del=1	[L]
+RewriteRule	^ab([0-9]+)/edit$		/index.php?page=ab_edit&id=$1	[L]
+RewriteRule	^ab([0-9]+)/edit/save$	/index.php?page=ab_edit&id=$1&save=1 [L]
+RewriteRule	^ab([0-9]+)/log$		/index.php?page=ab_log&id=$1	[L]
+
+
+RewriteRule	^my-setup$			/index.php?page=mySetup 		[L]
+
+RewriteRule	^adres-edit$			/index.php?page=adresEdit 		[L]
+
+RewriteRule	^abon-calc$			/index.php?page=abonCalc 		[L]
+RewriteRule	^abon-calc/ok$		/index.php?page=abonCalcOk	[L]
+
+
+RewriteRule	^remont$			/index.php?page=remont	 		[L]
+RewriteRule	^remont/wait$		/index.php?page=remont&status=2	[L]
+RewriteRule	^remont/executed$	/index.php?page=remont&status=1	[L]
+RewriteRule	^remont/deleted$	/index.php?page=remont&status=3	[L]
+
+
+
+
+RewriteRule	^find/$				/index.php?page=find	 		[L]
+
+RewriteRule	^oplata$				/index.php?page=oplata	 		[L]
+RewriteRule	^oplata/del/([0-9]+)$	/index.php?page=oplata&id=$1	[L]
+
+RewriteRule	^ab/new$			/index.php?page=abNew 		[L]
+RewriteRule	^ab/new/([0-9]+)$		/index.php?page=abNew&regOk=$1	[L]
+
+RewriteRule	^report/$						/index.php?page=report	 			[L]
+RewriteRule	^report/([0-9]+)/([0-9]+)/([0-9]+)$	/index.php?page=report&day=$1-$2-$3	[L]
+RewriteRule	^report/([0-9]+)$				/index.php?page=reportYear&year=$1&table=Oplata [L]
+RewriteRule	^report/([0-9]+)/([a-zA-Z]+)$		/index.php?page=reportYear&year=$1&table=$2 [L]
+RewriteRule	^report/([0-9]+)/([0-9]+)$	/index.php?page=reportMonth&year=$1&mon=$2&table=Oplata [L]
+RewriteRule	^report/([0-9]+)/([0-9]+)/([a-zA-Z]+)$	/index.php?page=reportMonth&year=$1&mon=$2&table=$3 [L]
+
+RewriteRule	^admin/$					/index.php?page=admin			[L]
+RewriteRule	^admin/workers$			/index.php?page=workers		[L]
+RewriteRule	^admin/workers/([0-9]+)$	/index.php?page=worker&id=$1	[L]
+RewriteRule	^admin/workers/add$		/index.php?page=workerAdd		[L]
+RewriteRule	^admin/lgota$				/index.php?page=lgota			[L]
+RewriteRule	^admin/lgota/([0-9]+)$		/index.php?page=lgotaEdit&id=$1	[L]
+RewriteRule	^admin/lgota/add$			/index.php?page=lgotaAdd		[L]
+RewriteRule	^admin/dump$			/index.php?page=dump			[L]
+
+
+RewriteRule	^exit$				/index.php?page=exit
