@@ -1,0 +1,71 @@
+* { padding:0;margin:0;}
+BODY { padding:20px;}
+#Spisok {
+	border-top: #000 solid 1px;
+	border-left: #000 solid 1px;
+	}
+#Spisok TH {
+	font:bold 14px Times New Roman;
+	padding:4px;
+	border-right: #000 solid 1px;
+	border-bottom: #000 solid 1px;
+	}
+#Spisok TD {
+	font:13px Times New Roman;
+	border-right: #000 solid 1px;
+	border-right-style:dashed;
+	border-bottom: #000 solid 1px;
+	border-bottom-style:dashed;
+	padding:3px 6px 3px 6px;
+	}
+H2 {
+	font: bold 20px Times New Roman;
+	text-align:center;
+	padding-bottom:10px;
+	}
+P {
+	font:15px Times New Roman;
+	margin:20px 0 20px 0;
+	padding-left:20px;
+	}
+
+DIV { font:14px Arial Narrow; }
+
+IMG {border:0;}
+#Print {
+	position:absolute;
+	top:5px;
+	left:10px;
+	}
+
+
+
+#KvitOplata {
+	width:350px;
+	padding:8px;
+	border:#000 solid 1px;
+	}
+#KvitOplata TABLE { width:100% }
+#KvitOplata H3 { font: 13px Tahoma; }
+#KvitOplata H1 {
+	font: 15px Times New Roman;
+	text-align:center;
+	padding: 10px 0 8px 0;
+	text-decoration:underline;
+	}
+#KvitOplata TD, #KvitOplata TD H4 { font:12px Tahoma; }
+#KvitOplata TD H4 { padding: 8px 0 8px 0; }
+#KvitOplata HR {
+	border:none;
+	border-top: #000 solid 1px;
+	margin:5px 0 10px 0;
+	}
+#KvitOplata H5 { font: 11px Tahoma; }
+#KvitOplataLine {
+	width:366px;
+	height:0;
+	font: 1px Tahoma;
+	margin:5px 0 5px 0;
+	border-top: #000 solid 1px;
+	border-top-style:dashed;
+	}

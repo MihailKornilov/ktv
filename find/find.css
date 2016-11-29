@@ -1,0 +1,90 @@
+#findHead {
+	font:bold 13px Verdana;
+	margin-left:20px;
+	color:#353;
+	position:relative;
+	top:2px;
+	}
+#findHead TT {
+	font:11px Tahoma;
+	margin-left:10px;
+	}
+#findHead SPAN { margin-left:10px; }
+#findRamka {
+	border:#D0D9CF solid 1px;
+	padding:5px;
+	background:#F2FAF2;
+	}
+.row {
+	clear:both;
+	height:28px;
+	}
+.about {
+	float:left;
+	color:#555;
+	width:125px;
+	font:12px Tahoma;
+	padding:5px;
+	text-align:right;
+	}
+.contain {
+	float:left;
+	padding:5px;
+	font:13px Arial;
+	}
+.contain INPUT {
+	font:13px Tahoma;
+	padding:0 1px 0 1px;
+	width:200px;
+	height:19px;
+	}
+
+#findKolonki { float:left; }
+#findKolonki H1 {
+	font:bold 11px tahoma;
+	text-decoration:underline;
+	padding-left:10px;
+	}
+#findKolonki A { display:block; }
+
+
+
+
+
+
+
+
+
+
+.spisokid {
+	padding:2px 5px 1px 0;
+	display:block;
+	text-align:right;
+	font:12px Arial;
+	color:#779;
+	}
+.spisokid:hover {
+	font-weight:bold;
+	background:#FFF;
+	color:#446;
+	}
+#spisok TD IMG {
+	float:right;
+	margin-left:2px;
+	}
+#spisok EM A {
+	font:10px Tahoma;
+	margin-left:4px;
+	}
+#spisok TT {
+	font:11px Tahoma;
+	color:#555;
+	}
+
+
+
+
+
+
+
+

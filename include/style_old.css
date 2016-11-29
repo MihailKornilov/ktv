@@ -1,0 +1,329 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#TabEdit { margin:20px 20px 0 20px;}
+#TabEdit TH {
+	vertical-align:middle;
+	height:22px;
+	width:100px;
+	font: 12px Arial;
+	text-align:left;
+	color:#446;
+	}
+#TabEdit TD {
+	font: 12px Tahoma;
+	vertical-align:middle;
+	}
+
+
+
+
+
+#RemontLink {
+	width:600px;
+	font: 13px Verdana;
+	padding:5px;
+	margin-bottom:10px;
+	}
+#RemontLink P {
+	float:left;
+	padding:4px;
+	} 
+#RemontLink A {
+	padding:3px 10px 3px 10px;
+	display:block;
+	float:left;
+	margin:0 3px 0 3px;
+	}
+#RemontLink DD A { border:#DDF5E2 solid 1px; }
+#RemontLink DT A {
+	background:#FFF;
+	border:#DDD solid 1px;
+	font-weight:bold;
+	}
+#RemontLink A:hover {
+	background:#E8F0E8;
+	border:#DDD solid 1px;
+	text-decoration:none;
+	}
+#RemontLink B {
+	margin-left:30px;
+	color:#446;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#EditInfo {
+	border-left:#72A182 solid 1px;
+	border-bottom:#72A182 solid 1px;
+	width:500px;
+	}
+#EditInfo TD {
+	font: 11px tahoma;
+	padding-top:3px;
+	}
+#EditInfo TD B,#EditInfo TD I,#EditInfo TD U {
+	display:block;
+	float:left;
+	font: 11px Tahoma;
+	}
+#EditInfo TD B { margin-right:7px; }
+#EditInfo TD U {
+	margin-left:3px;
+	text-decoration:none;
+	padding-top:2px;
+	}
+#EditInfo INPUT, #EditInfo SELECT{ height:17px; }
+#EditInfo P INPUT,#EditInfo P SELECT { margin:1px 15px 2px 0px; }
+#EditInfo CHECKBOX {  }
+#EditInfo TEXTAREA {
+	width:480px;
+	height:60px;
+	font: 12px Tahoma;
+	padding:1px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#AbonCalc {
+	margin:20px 0 0 10px;
+	font:12px Tahoma;
+	width:450px;
+	}
+#AbonCalc TD {
+	background:#B0DBB8;
+	padding:7px 8px 7px 8px;
+	}
+#AbonCalc SELECT { margin-right:2px; }
+#AbonCalc BUTTON {
+	font: bold 12px Tahoma;
+	background:#F0E816;
+	width:70px;
+	border:#C4BE12 solid 1px;
+	padding-top:1px;
+	padding-bottom:2px;
+	color:#343;
+	}
+
+
+
+
+
+#AbonCalcGo {
+	margin:10px 0 20px 60px;
+	border:#A6CEAD solid 1px;
+	width:350px;
+	}
+#AbonCalcGo H1 {
+	text-align:center;
+	background:#699D75;
+	color:#F0F0F0;
+	font:17px Trebuchet MS;
+	padding:2px 0 3px 0;
+	border-bottom:#83C391 solid 1px;
+	}
+#AbonCalcGo TD {
+	background:#C3E9C8;
+	border-bottom:#CBF3D1 solid 1px;
+	font: 12px Tahoma;
+	}
+#AbonCalcGo TH {
+	background:#E7F7EA;
+	font: 11px Tahoma;
+	text-align:left;
+	padding: 5px 10px 5px 10px;
+	color:#333;
+	}
+#AbonCalcGo P { padding:5px 0 6px 40px; }
+#AbonCalcGo H4 {
+	text-align:center;
+	padding:6px 0 10px 0;
+	}
+#AbonCalcGo BUTTON {
+	width:180px;
+	font: bold 12px Tahoma;
+	background:#F0E816;
+	border:#C4BE12 solid 1px;
+	padding:2px 0 3px 0;
+	color:#343;
+	}
+
+
+
+#AbonCalcSelect {
+	padding:20px 0 0 30px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+#KvitPrint {
+	margin-left:20px;
+	}
+#KvitPrint TH {
+	vertical-align:middle;
+	padding:1px 10px 1px 10px;
+	font: bold 15px Microsoft Sans Serif;
+	color:#FFF;
+	background:#83AB8A;
+	border-bottom:#4A614F solid 1px;
+	height:25px;
+	width:200px;
+	}
+#KvitPrint TD {
+	vertical-align:top;
+	border-left:#D5EDDE solid 1px;
+	border-right:#D5EDDE solid 1px;
+	border-bottom:#83AB8A solid 1px;
+	background:#E4FFEE;
+	padding:0 0 15px 5px;
+	}
+#KvitPrint DT {
+	font:bold 12px Tahoma;
+	padding-top:8px;
+	}
+#KvitPrint DD {
+	font: 11px Tahoma;
+	padding-left:50px;
+	padding-top:2px;
+	}
+#KvitPrint IMG {
+	position:relative;
+	top:3px;
+	left:4px;
+	margin-right:7px;
+	}
+#KvitPrint P {
+	font: 12px Tahoma;
+	padding-top:2px;
+	}
+#KvitPrint H3 {
+	padding:3px 0 3px 5px;
+	font: bold 15px Tahoma;
+	color:#7A0;
+	text-decoration:underline;
+	}
+#KvitPrint H4 {
+	width:700px;
+	padding:9px 0 10px 20px;
+	font: 14px Verdana;
+	}
+#KvitPrint H4 A { font: 11px Verdana; }
+#KvitPrint DIV {
+	float:left;
+	padding-top:5px;
+	}
+#KvitPrint U {
+	text-decoration:none;
+	display:block;
+	font: bold 15px Century Gothic;
+	width:60px;
+	border:#CCC solid 1px;
+	background:#FFF;
+	margin:0 5px 0 5px;
+	padding:2px 0 2px 0;
+	text-align:center;
+	float:left;
+	}
+#KvitPrint BUTTON {
+	width:120px;
+	height:24px;
+	font: bold 12px Tahoma;
+	background:#F0E816;
+	border:#AAA solid 1px;
+	padding:2px 0 3px 0;
+	color:#343;
+	margin-right:20px;
+	}

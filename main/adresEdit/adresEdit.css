@@ -1,0 +1,174 @@
+#adresEdit { margin:10px 0 0 40px; }
+
+.row { clear:both; }
+.row BUTTON {
+	font: 11px Tahoma;
+	background:#F0E816;
+	border:#C4BE12 solid 1px;
+	width:65px;
+	padding:1px 0 2px 0;
+	margin-left:5px;
+	}
+.row INPUT {
+	font:12px Tahoma;
+	padding:0 1px 0 1px;
+	}
+.row P { margin-top:1px; }
+
+.aName {
+	float:left;
+	font: bold 12px Tahoma;
+	background:#BFD4C3;
+	border-bottom:#92A295 solid 1px;
+	width:180px;
+	margin:0 1px 0 1px;
+	padding:4px 0 5px 10px;
+	color:#343;
+	}
+.aName IMG {
+	position:relative;
+	top:1px;
+	left:-10px;
+	cursor:pointer;
+	float:right;
+	}
+.row SPAN {
+	color:#777;
+	font:italic 12px Arial;
+	}
+
+
+#aGorodAdd,#aUlicaAdd,#aDomAdd {
+	font: 11px Tahoma;
+	border:#D99 solid 1px;
+	background:#FDD;
+	padding:3px 3px 3px 10px;
+	display:none;
+	}
+#aGorodAdd INPUT, #aUlicaAdd INPUT { width:200px; }
+#aGorodAdd { width:300px; margin-left:2px; }
+#aUlicaAdd { width:300px; margin-left:185px; }
+#aDomAdd { width:220px; margin-left:370px; }
+#aDomAdd INPUT { width:60px; }
+
+.domAdded {
+	font-weight:bold;
+	color:#090;
+	}
+
+
+
+
+.aSpisok {
+	float:left;
+	width:180px;
+	margin:0 1px 0 1px;
+	padding:5px;
+	border-bottom:#92A295 solid 1px;
+	}
+.aNaim {
+	font:12px Verdana;
+	display:block;
+	border:#DDF5E2 solid 1px;
+	padding:0 30px 0 5px;
+	color:#558;
+	}
+.aNaim:hover {
+	border: #B6CABD solid 1px;
+	text-decoration:none;
+	}
+
+.aNaimSel {
+	font:bold 12px Verdana;
+	display:block;
+	background:#D2EADB url(/img/arrow_r.gif) center right no-repeat;
+	border:#90A096 solid 1px;
+	padding:0 30px 0 5px;
+	}
+.aNaimSel:hover {	text-decoration:none; }
+
+
+#aDomSpisok {
+	text-align:center;
+	font:12px Tahoma;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#SetupAdres { margin-top:5px; }
+#SetupAdres TABLE { width:420px; }
+#SetupAdres TH {
+	vertical-align:middle;
+	padding:1px 10px 1px 10px;
+	font: bold 12px Tahoma;
+	background:#BFD4C3;
+	border-bottom:#92A295 solid 1px;
+	height:25px;
+	}
+#SetupAdres TH IMG {
+	position:relative;
+	top:2px;
+	left:5px;
+	}
+#SetupAdres TD {
+	padding:1px 10px 4px 5px;
+	font: 11px Tahoma;
+	border-bottom:#92A295 solid 1px;
+	}
+#SetupAdres TD A {
+	display:block;
+	border: #DEF7E7 solid 1px;
+	padding-left:10px;
+	padding-right:30px;
+	}
+#SetupAdres TD A:hover {
+	border: #B6CABD solid 1px;
+	text-decoration:none;
+	}
+#SetupAdres TD SPAN { color:#999; }
+
+
+TH#SetupAdresAdd {
+	text-align:left;
+	border:none;
+	padding:0;
+	height:0;
+	background:none;
+	}
+TH#SetupAdresAdd FORM {
+	font: 11px Tahoma;
+	border:#D99 solid 1px;
+	background:#FDD;
+	padding:3px 3px 3px 10px;
+	}
+TH#SetupAdresAdd BUTTON {
+	font: 11px Tahoma;
+	background:#F0E816;
+	width:65px;
+	border:#C4BE12 solid 1px;
+	height:18px;
+	margin:0 20px 0 5px;
+	}
+TH#SetupAdresAdd INPUT {
+	height:18px;
+	margin:2px 0 0 5px;
+	}
+TH#SetupAdresAdd I {
+	font: 12px Tahoma;
+	color:#B00;
+	}
+TH#SetupAdresAdd U {
+	font: bold 12px Tahoma;
+	color:#090;
+	text-decoration:none;
+	}

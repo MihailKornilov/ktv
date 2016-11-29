@@ -1,0 +1,137 @@
+#MainLinks {
+	margin:0 10px 10px 10px;
+	width:240px;
+	float:left;
+	}
+#MainLinks H1 {
+	font: 15px Century Gothic;
+	text-align:center;
+	color:#666;
+	}
+#MainLinks DIV {	border:#CAE1D3 solid 1px; }
+#MainLinks H4 {
+	border:#E2FCEC solid 1px;
+	background:#F8F8F8;
+	padding:10px;
+	}
+#MainLinks H4 A {
+	font: 13px Tahoma;
+	border:#F8F8F8 solid 1px;
+	display:block;
+	width:204px;
+	height:48px;
+	margin: 3px 0 5px 0;
+	padding:5px;
+	}
+#MainLinks H4 A:hover {	
+	background:#F0F8F0;
+	border:#DDD solid 1px;
+	text-decoration:none;
+	}
+#MainLinks A IMG {
+	margin:0 10px 0 5px;
+	float:left;
+	}
+#MainLinks A P { padding-top:8px; }
+
+
+
+
+
+
+
+
+#idea {
+	border:#CDC solid 1px;
+	float:left;
+	margin:10px 0 0 50px;
+	width:450px;
+	background:#F2F8F2;
+	}
+#idea H1 {
+	font:bold 16px Arial;
+	color:#363;
+	text-align:center;
+	padding:2px;
+	margin-bottom:10px;
+	border-bottom:#DDD solid 1px;
+	}
+#idea P {
+	font:bold 11px Tahoma;
+	padding-left:10px;
+	margin-bottom:2px;
+	}
+#idea P IMG {
+	position:relative;
+	top:2px;
+	left:5px;
+	display:none;
+	}
+#idea TEXTAREA {
+	width:430px;
+	height:100px;
+	font:12px Verdana;
+	padding:1px;
+	}
+#idea H4 { padding:4px 0 15px 180px; }
+
+
+#ideaSpisok DIV {
+	margin:10px;
+	border:#CCC solid 1px;
+	padding:2px 5px 2px 10px;
+	}
+#ideaSpisok H2 {
+	font:bold 11px Tahoma;
+	color:#335;
+	}
+#ideaSpisok H2 SPAN {
+	font:10px Tahoma;
+	color:#777;
+	margin-left:60px;
+	}
+#ideaSpisok H2 EM {
+	float:right;
+	font:bold 11px Arial;
+	color:#0C0;
+	}
+#ideaSpisok H3 {
+	font:12px Verdana;
+	padding:3px 10px 0 10px;
+	}
+#ideaSpisok H5 {
+	text-align:right;
+	}
+#ideaSpisok H5 A {
+	color:#A33;
+	font:10px Tahoma;
+	}
+#ideaSpisok H6 {
+	text-align:right;
+	padding:3px;
+	display:none;
+	}
+#ideaSpisok H6 INPUT {
+	width:320px;
+	margin:0 5px 0 10px;
+	font:12px Tahoma;
+	height:18px;
+	}
+#ideaSpisok H6 A { font:11px Tahoma; }
+#ideaSpisok DL { margin-left:30px; }
+#ideaSpisok DT {
+	padding-top:4px;
+	font:11px Tahoma;
+	color:#464;
+	}
+#ideaSpisok DT SPAN {
+	font:10px Tahoma;
+	color:#999;
+	margin-left:5px;
+	}
+#ideaSpisok DD {
+	font:italic 12px Arial;
+	}
+
+
+.ideaGotovo { background:#CFC; }

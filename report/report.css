@@ -1,0 +1,190 @@
+#repCalendar {
+	margin:10px;
+	background:#FFF;
+	border:#B7CCBC solid 1px;
+	}
+#repCalendar TH {
+	color:#FFF;
+	background:#85AA92;
+	font: bold 12px tahoma;
+	padding: 3px;
+	}
+#repCalendar TD {
+	font: 13px  sans-serif;
+	text-align:center;
+	color:#777;
+	}
+#repCalendar TD SELECT {
+	margin-right:4px;
+	height:17px;
+	text-align:right;
+	border:none;
+	}
+#repCalendar TD P {
+	width:26px;
+	border: #FFF solid 1px;
+	padding:3px 0 3px 0;
+	}
+#repCalendar TD U A {
+	display:block;
+	width:26px;
+	padding:3px 0 4px 0;
+	font: bold 13px Tahoma;
+	text-decoration:underline;
+	}
+.dayB { border: #FFF solid 1px; }
+.dayB:hover { border:#B7CCBC solid 1px; }
+.dayBsel { border: #8A8 solid 1px; }
+
+#repCalendar TD B A {
+	font: bold 14px Arial;
+	text-decoration:none;
+	color:#888;
+	}
+#repCalendar H6 {
+	font: 13px sans-serif;
+	position:absolute;
+	}
+#CalendYear, #CalendMon {
+	display:none;
+	border:#CCC solid 1px;
+	background:#FFE396;
+	padding:2px;
+	position:relative;
+	}
+#CalendYear {
+	left:-3px;
+	top:-83px;
+	}
+#CalendMon {
+	text-align:right;
+	left:-63px;
+	}
+#CalendYear DT, #CalendMon DT { font: bold 13px sans-serif; }
+#CalendMon DT { letter-spacing:-1px; }
+
+
+
+
+.row {
+	clear:both;
+	}
+#repTable {
+	float:left;
+	width:540px;
+	}
+#repCalSet {
+	float:left;
+	}
+
+
+
+
+
+
+
+#otchet {
+	border:#36724B solid 1px;
+	margin:2px 30px 0 20px;
+	}
+#otchet TH {
+	font: bold 11px tahoma;
+	background:#CFE7D5;
+	vertical-align:middle;
+	padding: 1px 5px 3px 5px;
+	}
+#otchet TD {
+	font: 13px tahoma;
+	border-bottom:#CFE7D5 solid 1px;
+	border-left:#CFE7D5 solid 1px;
+	vertical-align:middle;
+	padding: 3px 10px 3px 10px;
+	}
+#otchet A { font-weight:bold; }
+
+
+
+
+#repLink {
+	padding:10px 30px 0 10px;
+	float:left;
+	}
+.repLink {
+	width:190px;
+	display:block;
+	font:12px Tahoma;
+	padding:1px 0 2px 15px;
+	color:141;
+	border-top:#DDF5E2 solid 1px;
+	}
+.repLink:hover {
+	background:#ACA;
+	border-top:#797 solid 1px;
+	text-decoration:none;
+	color:#FFF;
+	}
+.repLinkSel {
+	display:block;
+	padding:1px 0 2px 15px;
+	background:#ACA;
+	border-top:#797 solid 1px;
+	color:#FFF;
+	font:bold 12px Tahoma;
+	}
+.repLinkSel:hover { text-decoration:none; }
+
+
+
+
+
+#repSpisokGet {
+	padding:10px 20px 0 0;
+	float:left;
+	}
+
+
+
+
+
+
+
+#repSpisok {
+	border:#77AC8A solid 1px;
+	border-collapse:collapse;
+	}
+#repSpisok TH {
+	font: bold 11px Verdana;
+	background:#CFE7D5;
+	color:#444;
+	padding: 1px 5px 3px 5px;
+	}
+#repSpisok TD {
+	font: 12px tahoma;
+	border:#ACD0B5 solid 1px;
+	padding: 1px 10px 1px 10px;
+	}
+#repSpisok A { display:block; }
+#repSpisok A:hover {
+	font-weight:bold;
+	text-decoration:none;
+	}
+
+
+
+
+
+#repRow {
+	float:left;
+	margin-right:30px;
+	}
+#repRow H1 {
+	padding-left:10px;
+	font:bold 11px Tahoma;
+	color:#333;
+	}
+#repRow A { display:block; }
+
+
+
+#repAdmin { padding-bottom:20px; }
+

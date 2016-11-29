@@ -1,0 +1,71 @@
+#register {
+	border:#ACA solid 1px;
+	width:550px;
+	}
+#register TR {
+	vertical-align:middle;
+	background: #CFE7D5;
+	}
+#register TH {
+	height:26px;
+	text-align:left;
+	font:11px Verdana;
+	color:#444;
+	border-top: #E9F2EB solid 1px;
+	padding: 1px 10px 3px 10px;
+	}
+#register H4 {
+	padding:10px;
+	border-top: #E9F2EB solid 1px;
+	}
+
+#register INPUT { margin: 3px 10px 0px 0px; }
+#register BUTTON {
+	font: bold 13px Tahoma;
+	background:#F0E816;
+	border:#C4BE12 solid 1px;
+	padding:3px 15px 3px 15px;
+	color:#343;
+	margin-top:3px;
+	}
+
+
+
+
+
+#regOk TH {
+	padding: 8px 0 2px 0;
+	font: bold 15px Century Gothic;
+	text-decoration:underline;
+	}
+#regOk A {
+	border: #DDF5E2 solid 1px;
+	font: 13px Verdana;
+	color: #353;
+	padding: 5px 15px 5px 20px;
+	display:block;
+	}
+#regOk A:hover {
+	border: #696 solid 1px;
+	text-decoration:none;
+	background:#EFE;
+	}
+
+
+
+#povtor { padding:3px; }
+#povtor A {
+	display:block;
+	color:#447;
+	border:#CFE7D5 solid 1px;
+	padding:1px 5px 1px 5px;
+	}
+#povtor A:hover {
+	border:#BCB solid 1px;
+	background:#CEC;
+	color:#33C;
+	text-decoration:none;
+	}
+
+
+#adresPovtor { padding-top:10px; }

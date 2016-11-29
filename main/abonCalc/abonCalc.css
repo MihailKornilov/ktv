@@ -1,0 +1,91 @@
+#AbonCalcMon {
+	margin:10px 20px 0 10px;
+	width:400px;
+	float:left;
+	}
+
+#AbonCalcMon H1,#AbonCalcMon H6 {
+	height:8px;
+	overflow:hidden;
+	}
+#AbonCalcMon H1 { background: url(/img/abon_calc_top.gif); }
+#AbonCalcMon H6 { background: url(/img/abon_calc_bottom.gif); }
+#AbonCalcMon H2 {
+	background:#B0DBB8;
+	padding:7px 0 0 15px;
+	}
+#AbonCalcMon H5 {
+	font:20px Arial Narrow;
+	color:#B00;
+	text-align:center;
+	}
+
+
+.row { clear:both; }
+.row P {
+	float:left;
+	width:200px;
+	font:12px Tahoma;
+	padding-bottom:20px;
+	}
+.row H4 { padding-top:5px; }
+.row FONT {
+	cursor:pointer;
+	font:bold 15px Arial;
+	color:#888;
+	margin:0 5px 0 5px;
+	}
+
+
+
+#calcGorod DD { padding-bottom:4px; }
+
+
+
+
+
+#AbonCalcGo { padding:10px 0 20px 35px; }
+#AbonCalcGo TABLE {
+	border:#A6CEAD solid 1px;
+	width:350px;
+	}
+#AbonCalcGo H1 {
+	text-align:center;
+	background:#699D75;
+	color:#F0F0F0;
+	font:17px Trebuchet MS;
+	padding:2px 0 3px 0;
+	border-bottom:#83C391 solid 1px;
+	}
+#AbonCalcGo TD {
+	background:#C3E9C8;
+	border-bottom:#CBF3D1 solid 1px;
+	font: 12px Tahoma;
+	}
+#AbonCalcGo TH {
+	background:#E7F7EA;
+	font: 11px Tahoma;
+	text-align:left;
+	padding: 5px 10px 5px 10px;
+	color:#333;
+	}
+#AbonCalcGo P { padding:5px 0 6px 15px; }
+#AbonCalcGo H4 {
+	text-align:center;
+	padding:6px 0 10px 0;
+	}
+#AbonCalcGo BUTTON {
+	width:180px;
+	font: bold 12px Tahoma;
+	background:#F0E816;
+	border:#C4BE12 solid 1px;
+	padding:2px 0 3px 0;
+	color:#343;
+	}
+#AbonCalcGo IFRAME {
+	width:0;
+	height:0;
+	display:none;
+	}
+
+

@@ -1,0 +1,604 @@
+#mySelOplata {
+	width:200px;
+	position:absolute;
+	}
+#mySelOplata DL {
+	position:relative;
+	top:-10px;
+	border-top:#99B solid 1px;
+	border-left:#99B solid 1px;
+	border-right:#99B solid 1px;
+	cursor:pointer;
+	}
+#mySelOplata B {
+	background:#EEF;
+	border-left:#BBC solid 1px;
+	padding:1px 7px 2px 7px;
+	color:#666;
+	font:bold 13px Century Gothic;
+	}
+#mySelOplata DT {
+	border-bottom:#99B solid 1px;
+	z-index:2;
+	}
+#mySelOplata DD {
+	display:none;
+	color:#333;
+	font:12px Tahoma;
+	}
+#mySelOplata A {
+	display:block;
+	padding:2px 5px 3px 5px;
+	border-bottom:#99B solid 1px;
+	color:#333;
+	font:12px Arial;
+	}
+#mySelOplata A:hover {
+	text-decoration:none;
+	font-weight:bold;
+	}
+#mySelOplata TABLE { font:12px Tahoma; }
+#mySelOplata TABLE P { padding:2px 0 3px 5px; }
+
+
+
+
+
+
+
+
+#spisok I {
+	font:11px Tahoma;
+	margin:0 3px 0 3px;
+	}
+#spisok CODE {
+	background: #FF8;
+	padding:0 3px 0 3px;
+	border:#AA0 solid 1px;
+	font:11px Tahoma;
+	}
+
+
+
+
+
+
+
+
+
+
+#abonent {
+	border-right:#ACA solid 1px;
+	border-bottom:#ACA solid 1px;
+	border-left:#D1F0D7 solid 1px;
+	background:#ECF5EE;
+	}
+#abonent H5 {
+	color:#FFF;
+	background: #78A780;
+	border-top:#BDE2C3 solid 1px;
+	border-bottom: #4C5F50 solid 1px;
+	padding:2px 60px 2px 70px;
+	font: 17px Microsoft Sans Serif;
+	}
+#abonent H5 A {
+	font: 12px Verdana;
+	margin-left:10px;
+	color:CCF;
+	}
+#abonent H5 A:hover {
+	color:#EEF;
+	text-decoration:none;
+	}
+
+
+
+
+
+
+
+
+
+#OplataAdd {
+	padding:10px;
+	height:130px;
+	}
+#OplataAdd TH {
+	font:11px Verdana;
+	color:#222;
+	text-align:right;
+	padding:0 7px 0 5px;
+	height:28px;
+	}
+#OplataAdd CODE INPUT {
+	font: bold 18px Arial;
+	padding: 0px 2px 0px 3px;
+	width:65px;
+	height:25px;
+	}
+#OplataAdd SPAN INPUT {
+	font:12px Tahoma;
+	padding: 0px 1px 0px 1px;
+	width:250px;
+	}
+#OplataAdd H2 {
+	margin:15px 0 0 80px;
+	font:13px Verdana;
+	}
+#OplataAdd H2 IMG {
+	float:left;
+	padding-right:10px;
+	}
+
+
+
+
+
+
+
+
+#abAbon {
+	padding:10px 20px 0 10px;
+	width:450px;
+	height:140px;
+	}
+#abAbon TH {
+	font:11px Verdana;
+	color:#444;
+	text-align:right;
+	padding:0 7px 0 5px;
+	height:25px;
+	}
+#abAbon TH A {
+	font:bold 13px Verdana;
+	color:#446;
+	}
+#abAbon TD { font:13px Verdana; }
+#abAbon FONT {
+	cursor:pointer;
+	font:bold 15px Arial;
+	color:#888;
+	margin:0 5px 0 5px;
+	}
+#abAbon H1 {
+	font:bold 16px Arial;
+	color:#343;
+	}
+#abAbon H2 {
+	font:14px Arial;
+	color:#262;
+	padding:15px 0 10px 20px;
+	text-decoration:underline;
+	}
+#abAbon H6 {
+	font:11px Tahoma;
+	color:#666;
+	padding-left:90px;
+	}
+#abAbon CODE INPUT {
+	font: bold 16px Arial;
+	padding: 0px 2px 0px 2px;
+	width:60px;
+	height:22px;
+	}
+#abAbon SPAN INPUT {
+	font:11px Tahoma;
+	padding: 0px 1px 0px 1px;
+	width:250px;
+	height:17px;
+	}
+
+
+
+
+
+
+
+
+#povtor { padding:3px; }
+#povtor A {
+	display:block;
+	color:#447;
+	border:#CFE7D5 solid 1px;
+	padding:1px 5px 1px 5px;
+	}
+#povtor A:hover {
+	border:#BCB solid 1px;
+	background:#CEC;
+	color:#33C;
+	text-decoration:none;
+	}
+
+#fioPovtor {
+	font:11px Tahoma;
+	margin-left:5px;
+	}
+#adresPovtor {
+	padding:10px 0 5px 0;
+	font:11px Tahoma;
+	}
+
+
+
+
+
+
+
+#abUslugi {
+	padding:10px 20px 0 10px;
+	height:130px;
+	width:500px;
+	}
+#abUslugi TH {
+	font:11px Verdana;
+	color:#222;
+	text-align:right;
+	padding:0 7px 0 5px;
+	height:25px;
+	}
+#abUslugi CODE INPUT {
+	font: bold 16px Arial;
+	padding: 0px 2px 0px 2px;
+	width:60px;
+	height:22px;
+	}
+#abUslugi SPAN INPUT {
+	font:11px Tahoma;
+	padding: 0px 1px 0px 1px;
+	width:250px;
+	height:17px;
+	}
+
+
+
+
+
+
+
+#abRemont FORM { padding:10px; }
+#abRemont TH {
+	font:11px Verdana;
+	color:#444;
+	text-align:right;
+	padding:0 7px 0 5px;
+	height:23px;
+	}
+#abRemont H3 {
+	font:12px Tahoma;
+	}
+#abRemont SPAN INPUT {
+	font:11px Tahoma;
+	padding: 0px 1px 0px 1px;
+	width:250px;
+	height:17px;
+	}
+#abRemont H1 {
+	margin:0 20px 0 60px;
+	font: bold 14px Tahoma;
+	color:#B33;
+	padding:3px 5px 3px 10px;
+	border:#EDD solid 1px;
+	background:#FEE;
+	}
+#abRemont H2 {
+	margin:30px 20px 5px 20px;
+	padding:5px 0 0 20px;
+	border-top:#BAA solid 1px;
+	font:bold 11px Verdana;
+	color:#444;
+	}
+#abRemont H2 A {
+	margin-left:10px;
+	font:12px Tahoma;
+	color:#D33;
+	}
+#abRemont H2 IMG {
+	margin-right:2px;
+	position:relative;
+	top:3px;
+	}
+#abRemont H4 {
+	font:12px Tahoma;
+	text-align:center;
+	padding-bottom:20px;
+	}
+#abRemont U {
+	margin-left:6px;
+	text-decoration:none;
+	font:11px Tahoma;
+	}
+#abRemont U IMG {
+	position:relative;
+	top:2px;
+	}
+#abRemont U B { color:#494; }
+#abRemont BLOCKQUOTE {
+	width:100px;
+	background:#F9F9F9;
+	border:#DDD solid 1px;
+	padding:2px 0 2px 0;
+	font:bold 14px Arial;
+	text-align:center;
+	}
+
+
+
+#primSpisok TABLE {
+	border-collapse:collapse;
+	margin-top:3px;
+	}
+#primSpisok CAPTION {
+	font:bold 11px Century Gothic;
+	color:#888;
+	text-align:left;
+	padding-left:40px;
+	}
+#primSpisok TD {
+	font:10px Tahoma;
+	border:#AAA solid 1px;
+	padding:0 3px 0 4px;
+	color:#777;
+	}
+#primSpisok STRONG {
+	text-align:left;
+	font:11px tahoma;
+	padding:0 3px 0 4px;
+	color:#040;
+	}
+#primSpisok A { font:10px Tahoma; }
+
+
+
+
+
+
+
+#abEdit {
+	width:500px;
+	border-right: #E9F2EB solid 1px;
+	}
+#abEdit TR {
+	background: #CFE7D5;
+	vertical-align:middle;
+	}
+#abEdit TH {
+	text-align:left;
+	border-top: #E9F2EB solid 1px;
+	height:25px;
+	}
+#abEdit P {
+	font: 11px tahoma;
+	padding: 0 10px 0 10px;
+	color:#555;
+	}
+#abEdit H3 {
+	font:11px Tahoma;
+	color:#222;
+	padding:1px;
+	}
+#abEdit H3 A I {
+	font:italic 11px Arial;
+	color:#777;
+	}
+#abEdit H3 INPUT { margin:0 20px 0 3px; }
+#abEdit H4 A {
+	font:12px Tahoma;
+	color:#228;
+	}
+#abEdit H4 A I {
+	font:italic 12px Arial;
+	color:#777;
+	}
+#abEdit H6 {
+	font: 11px tahoma;
+	border-right: #E9F2EB solid 1px;
+	}
+#abEdit TEXTAREA {
+	width:480px;
+	height:60px;
+	font: 12px Tahoma;
+	padding:1px;
+	margin:3px 0 5px 0;
+	}
+#abEdit INPUT {
+	font: 12px Tahoma;
+	padding-left:1px;
+	height:18px;
+	}
+#abEdit FONT {
+	font:11px Tahoma;
+	color:#777;
+	margin-left:5px;
+	}
+#abEdit FONT A { color:#66A; }
+#abEdit FONT A:hover {
+	text-decoration:none;
+	color:#22A;
+	}
+#abEdit SPAN A { color:#226; }
+#abEdit IMG {
+	cursor:pointer;
+	position:relative;
+	top:3px;
+	margin:0 2px 0 10px;
+	}
+#abEdit U {
+	cursor:pointer;
+	font:11px Tahoma;
+	color:#335;
+	text-decoration:none;
+	}
+#abEdit BIG {
+	font:bold 16px Arial;
+	color:#242;
+	position:relative;
+	top:2px;
+	}
+
+
+
+#abSelectUslugi DIV { position:absolute; }
+#abSelectUslugi DL {
+	display:none;
+	width:320px;
+	}
+#abSelectUslugi DD A {
+	font:11px tahoma;
+	display:block;
+	padding:1px 2px 1px 3px;
+	color:#777;
+	background:#E4E4E4;
+	text-decoration:none;
+	border-left:#99B solid 1px;
+	border-right:#99B solid 1px;
+	border-bottom:#99B solid 1px;
+	}
+#abSelectUslugi DD A:hover { background:#F4F4F4; }
+#abSelectUslugi DD SPAN { color:#333; }
+#abSelectUslugi  FONT A {
+	background:#CCD;
+	border-top:#99B solid 1px;
+	border-right:#99B solid 1px;
+	border-bottom:#99B solid 1px;
+	color:#666;
+	font:bold 13px Century Gothic;
+	text-decoration:none;
+	padding:0 5px 1px 5px;
+	}
+#abSelectUslugi  FONT A:hover { background:#E0E0F8; }
+#abSelectUslugi INPUT {
+	width:302px;
+	font:13px Tahoma;
+	padding: 0px 1px 0px 2px;
+	height:19px;
+	border:#99B solid 1px;
+	 }
+
+
+
+
+
+
+
+
+
+
+#abMenu { background:#CCF; }
+#abMenu H5 { margin-bottom:3px; }
+#abMenu H5 A {
+	display:block;
+	padding:4px;
+	border-left: #33C solid 6px;
+	border-top:#CCF solid 1px;
+	border-bottom:#CCF solid 1px;
+	text-decoration:none;
+	}
+#abMenu DT { margin-bottom:3px; }
+#abMenu DT A {
+	display:block;
+	padding:4px;
+	border-left: #33C solid 6px;
+	border-top:#AAE solid 1px;
+	border-bottom:#AAE solid 1px;
+	}
+
+#abMenu A:hover {
+	border-left: #FAF704 solid 6px;
+	border-top:#77A solid 1px;
+	border-bottom:#77A solid 1px;
+	background: #AAE;
+	}
+/*#abMenu A:hover DIV { display:block; }*/
+#abMenu H6 {
+	z-index:1;
+	position:absolute;
+	}
+#abMenu H6 DIV {
+	display:none;
+	position:relative;
+	left:60px;
+	top:-5px;
+	font: bold 13px Microsoft Sans Serif;
+	color:#558;
+	width:160px;
+	border-top:#77A solid 1px;
+	border-right:#77A solid 1px;
+	border-bottom:#77A solid 1px;
+	background: #AAE;
+	padding:12px 5px 12px 7px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#abInfoSmall {
+	background: #FBFBE0;
+	border-top: #FFF solid 1px;
+	padding-bottom:6px;
+	}
+#abInfoSmall TABLE { width:100%; }
+#abInfoSmall TD, #abInfoSmall TH { vertical-align:middle; }
+#abInfoSmall TD {
+	font: 12px Tahoma;
+	padding:0 10px 0 5px;
+	}
+#abInfoSmall TH {
+	width:60px;
+	height:22px;
+	padding:0 3px 0 5px;
+	font: 11px Tahoma;
+	text-align:left;
+	color:#666;
+	}
+#abInfoSmall FONT { float:right; }
+#abInfoSmall IMG {
+	position:relative;
+	top:4px;
+	cursor:pointer;
+	margin-left:6px;
+	}
+#abInfoSmall TEXTAREA {
+	width:100%;
+	height:60px;
+	margin-top:4px;
+	border:#ACA solid 1px;
+	padding:1px 2px 1px 2px;
+	font:12px Verdana;
+	display:none;
+	}
+#bPlus B, #bMinus B {
+	background: #EEF;
+	font: bold 15px Century Gothic;
+	padding: 0 20px 0 20px;
+	text-align:center;
+	border: #AAA solid 1px;
+	}
+#abInfoSmall I {
+	font:11px tahoma;
+	color:#777;
+	margin-left:6px;
+	}
+#abInfoSmall I A { color:#66A; }
+#abInfoSmall I A:hover {
+	text-decoration:none;
+	color:#22A;
+	}
+#abInfoSmall H1 { display:none; }
+
+#bPlus		{ color:#090; }
+#bMinus	{ color:#D00; }
+
+
+
+
+
+

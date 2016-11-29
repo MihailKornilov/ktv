@@ -1,0 +1,39 @@
+#RemontLink {
+	font: 13px Verdana;
+	margin:0 0 10px 30px;
+	}
+#RemontLink TD { padding-right:6px;}
+#RemontLink A {
+	padding:3px 7px 3px 7px;
+	display:block;
+	border:#DDF5E2 solid 1px;
+	text-align:center;
+	}
+#RemontLink A:hover {
+	background:#F8F8F8;
+	border:#DDD solid 1px;
+	text-decoration:none;
+	}
+
+#RemontLinkSel A {
+	background:#FFF;
+	border:#DDD solid 1px;
+	font-weight:bold;
+	}
+
+
+
+
+
+
+
+#spisok TD { color:#555; }
+#spisok EM {
+	font:11px Tahoma;
+	color:#000;
+	}
+#spisok EM A {
+	font:10px Tahoma;
+	margin-left:4px;
+	color:#E3ECE5;
+	}

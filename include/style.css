@@ -1,0 +1,795 @@
+* { margin:0; padding:0; }
+A { text-decoration:none; color:#00D; outline: none; }
+A:hover { text-decoration:underline; }
+body { background: url(/img/bg-body.gif); }
+html, body { width:100%; height:100%; }
+img { border:none; outline: none; }
+CAPTION { font: 15px Century Gothic; }
+
+
+
+
+.bPlus		{ color:#090; }
+.bMinus	{ color:#D00; }
+
+
+
+
+
+
+
+#calendar {
+	position:absolute;
+	border:#DDD solid 1px;
+	padding:2px;
+	background:#F4F4F4;
+	display:none;
+	z-index:1;
+	}
+#calendar DIV {
+	border:#FFF solid 1px;
+	padding:1px;
+	background:#D3D3DD;
+	}
+#calendar TABLE { background:#DDF; }
+#calendar TR { text-align:center; }
+#calendar IMG { cursor:pointer; }
+#calendar H2 {
+	font:10px Tahoma;
+	padding:4px 0 4px 0;
+	background:#D8D8D8;
+	border-right:#AAA solid 1px;
+	color:#999;
+	width:17px;
+	margin-right:1px;
+	}
+#calendar H4 {
+	border-top:#AAD solid 1px;
+	padding:2px 0 3px 0;
+	background:#EEF;
+	font:11px tahoma;
+	}
+#calendar H4 A { color:#779; }
+#calendar H4 A:hover { color:#334; }
+#calendar H4 I {
+	font:10px Arial;
+	border:#FFF solid 1px;
+	color:#FFF;
+	background:#F66;
+	padding:0 4px 1px 4px;
+	margin-right:1px;
+	float:right;
+	cursor:pointer;
+	position:relative;
+	top:-1px;
+	}
+#calendar H1 A {
+	display:block;
+	font:13px Verdana;
+	color:#777;
+	}
+#calendar H1 A:hover { font-weight:bold; }
+#calendar INPUT {
+	width:37px;
+	font:11px Tahoma;
+	height:17px;
+	border:#CCE solid 1px;
+	text-align:center;
+	margin:1px 0 1px 0;
+	background:#F4F4FF;
+	}
+#calendar TH {
+	font:11px Verdana;
+	padding:1px;
+	background:#CCC;
+	border-bottom:#999 solid 1px;
+	color:#666;
+	}
+#calendar A { text-decoration:none; }
+#calendar H6 A {
+	display:block;
+	font:12px Verdana;
+	color:#444;
+	border:#DDF solid 1px;
+	width:21px;
+	padding:2px 0 2px 0;
+	background:#D5D5F7;
+	text-align:center;
+	color:#557;
+	}
+#calendar H6 A:hover {
+	border:#AAC solid 1px;
+	background:#CCE;
+	color:#224;
+	}
+#calendar H6 A B { color:#252; }
+#calendar IFRAME { display:none; }
+#calendar H3 { position:absolute; }
+#calendar DL {
+	position:relative;
+	top:-9px;
+	width:66px;
+	padding-bottom:2px;
+	border-top:#DDF solid 1px;
+	border-left:#DDF solid 1px;
+	border-right:#DDF solid 1px;
+	}
+#calendar DT A {
+	display:block;
+	text-align:center;
+	font:12px Tahoma;
+	border:#DDF solid 1px;
+	color:#333;
+	}
+#calendar DT A:hover {
+	background:#EEF;
+/*	border:#AAC solid 1px;*/
+	}
+#calendar DD {
+	position:relative;
+	top:1px;
+	background:#FFF;
+	padding:0 1px 0 1px;
+	display:none;
+	}
+#calendar DD A {
+	display:block;
+	font:11px Tahoma;
+	padding-left:3px;
+	border:#FFF solid 1px;
+	color:#557;
+	}
+#calendar DD A:hover {
+	background:#99B;
+	color:#FFF;
+	border:#668 solid 1px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+#msgErr,#msgOk {
+	margin: 10px 20px 10px 20px;
+	padding: 7px 10px 7px 10px;
+	font: 15px tahoma;
+	}
+#msgErr { border: #A81F1C solid 1px;	background: #F8A795; }
+#msgOk { border: #1FA81C solid 1px;	background: #A7F895; }
+
+
+
+
+
+
+
+
+.myBytton {
+	border:#ACA710 solid 1px;
+	cursor:pointer;
+	width:80px;
+	}
+.myBytton A {
+	display:block;
+	text-align:center;
+	background:#E8E367;
+	padding:4px 0 4px 0;
+	font: bold 12px Verdana;
+	border-top:#FAF691 solid 1px;
+	border-left:#D0CC5C solid 1px;
+	border-right:#D0CC5C solid 1px;
+	border-bottom:#D0CC5C solid 1px;
+	color:#333;
+	}
+.myBytton A:hover {
+	text-decoration:none;
+	background:#F4EF68;
+	}
+
+
+
+
+
+
+
+
+/* INPUT radio */
+.radio0 {
+	background:url(/img/radio.gif) no-repeat 0 1px;
+	color:#888;
+	}
+.radio0, .radio1 { 
+	padding-left:16px;
+	margin-right:10px;
+	}
+.radio0:hover {
+	background-position:0 -27px;
+	text-decoration:none;
+	}
+.radio1 {
+	background:url(/img/radio.gif) no-repeat 0 -55px;
+	color:#343;
+	font-weight:bold;
+	}
+.radio1:hover {
+	background-position:0 -83px;
+	text-decoration:none;
+	}
+
+
+/* INPUT checkbox */
+.check0, .check1 {
+	padding:3px 0 2px 0;
+	font:11px Tahoma;
+	color:#343;
+	}
+.check0 { background:url(/img/checkbox.gif) no-repeat 0 2px; }
+.check0:hover {
+	background-position:0 -28px;
+	text-decoration:none;
+	}
+.check1 { background:url(/img/checkbox.gif) no-repeat 0 -58px; }
+.check1:hover {
+	background-position:0 -88px;
+	text-decoration:none;
+	}
+
+
+
+
+
+
+
+
+
+#TableSetup {
+	border:#ACA solid 1px;
+	background:#EEF8EE;
+	}
+#TableSetup TH {
+	font:11px Verdana;
+	color:#555;
+	height:28px;
+	text-align:left;
+	padding:0 5px 0 10px;
+	line-height:100%;
+	}
+#TableSetup TD { font:12px Tahoma; }
+#TableSetup TD IMG { cursor:pointer; }
+#TableSetup INPUT {
+	font:12px Tahoma;
+	padding:1px 2px 0 2px;
+	border:#BDB solid 1px;
+	height:19px;
+	margin-right:10px;
+	}
+#TableSetup H1 {
+	font:bold 14px Verdana;
+	text-align:center;
+	background:#A2E1B9;
+	border-top:#B7E9C9 solid 1px;
+	border-bottom:#93CCA8 solid 1px;
+	padding:2px 0 2px 0;
+	color:#444;
+	}
+#TableSetup H2 { margin:10px; }
+
+
+
+
+
+
+
+
+
+
+.msgEmpty {
+	margin:15px;
+	font:12px Trebuchet MS;
+	color:#777;
+	}
+
+
+
+
+
+#headLinks {
+	border-left: #444 solid 1px;
+	border-right: #444 solid 1px;
+	height:36;
+	background: #F8F8F8 url(/img/bg-button-1.gif) top left repeat-x;
+	}
+#headLinks  A {
+	font: 13px Verdana, Arial, sans-serif;
+	color:#FFF;
+	padding-left:30px;
+	padding-right:30px;
+	height:35;
+	line-height: 35px;
+	text-align:center;
+	border-right: #738370 solid 1px;
+	display: block;
+	float:left;
+	}
+#headLinks  A:hover {
+	background: #F8F8F8 url(/img/bg-button-3.gif) top left repeat-x;
+	text-decoration:none;
+	}
+
+
+
+
+
+#headLeft {
+	border-top:#444 solid 1px;
+	background: #F8F8F8;
+	border-left:#444 solid 1px;
+	padding:0 0 5px 5px;
+	}
+#headLeft H1 {
+	color: #559;
+	font: bold 19px Microsoft Sans Serif;
+	padding-left:30px;
+	}
+#headLeft P {
+	font:12px Arial Narrow;
+	margin-left:5px;
+	}
+#headLeft B { font:bold 11px Verdana; }
+#headLeft A {
+	font:10px Tahoma;
+	color:#C44;
+	margin-left:10px;
+	}
+#headRight {
+	border-top:#444 solid 1px;
+	background: #F8F8F8;
+	border-right:#444 solid 1px;
+	padding:6px;
+	text-align:right;
+	}
+
+
+
+
+
+
+
+
+
+#bodyContent {
+	border-left: #444 solid 1px;
+	border-right: #444 solid 1px;
+	border-bottom: #444 solid 1px;
+	background: #DDF5E2;
+	padding:5px 10px 20px 10px;
+	}
+
+
+
+
+
+
+#path {
+	font:bold 11px Tahoma;
+	color:#444;
+	padding:5px 0 5px 10px;
+	}
+#path A { font-weight:normal; }
+#path IMG {
+	position:relative;
+	top:1px;
+	left:10px;
+	}
+
+
+
+
+
+
+
+#Enter {
+	border: #AAA solid 1px;
+	width:210px;
+	background: #DDF5E2;
+	margin:20px 0 0 40px;
+	}
+#Enter TABLE { width:100%; }
+#Enter H5 {
+	color:#FFF;
+	background: #78A780;
+	border-bottom: #4C5F50 solid 1px;
+	padding:2px 0px 2px 0px;
+	text-align:center;
+	font: 15px Microsoft Sans Serif;
+	}
+
+#Enter TH {
+	font:11px Verdana;
+	text-align:right;
+	padding:5px;
+	color:#555;
+	}
+
+#Enter TD {	padding: 4px; }
+#Enter INPUT { width: 130px; }
+
+
+
+
+
+
+
+#Adres TD { font:11px Tahoma; }
+#Adres TT {
+	font:bold 12px Arial;
+	cursor:pointer;
+	margin:0 10px 0 1px;
+	color:#338;
+	}
+#Adres DIV {
+	z-index:6;
+	position:absolute;
+	}
+#Adres DL {
+	display:none;
+	position:relative;
+	top:-1px;
+	left:-4px;
+	background:#FFF;
+	border-top:#8B8 solid 1px;
+	border-left:#8B8 solid 1px;
+	border-right:#8B8 solid 1px;
+	}
+#Adres DL A {
+	display:block;
+	padding:0 4px 1px 4px;
+	border-bottom:#8B8 solid 1px;
+	color:#333;
+	}
+#Adres DL A:hover {
+	text-decoration:none;
+	background:#EEC;
+	}
+#Adres I {
+	color:#777;
+	font:italic 11px Arial;
+	cursor:pointer;
+	}
+#Adres INPUT {
+	font:12px Tahoma;
+	width:35px;
+	}
+
+
+
+
+
+
+#spisok {
+	border-top:#CDC solid 1px;
+	border-right:#9A9 solid 1px;
+	border-bottom:#9A9 solid 1px;
+	margin:10px;
+	}
+#spisok A { text-decoration:none; }
+#spisok TH {
+	background: #B4C8B8;
+	border-left: #CEC solid 1px;
+	border-bottom: #9BAC9E solid 1px;
+	font:12px tahoma;
+	padding:2px 5px 2px 5px;
+	text-align:center;
+	color:#333;
+	}
+#spisok TD {
+	border-top:#F0F0F0 solid 1px;
+	border-left:#EEE solid 1px;
+	font: 11px Tahoma;
+	padding:1px 5px 1px 5px;
+	vertical-align:middle;
+	color:#222;
+	}
+#spisok U {
+	color:#777;
+	text-decoration:none;
+	font:10px Tahoma;
+	}
+#spisok BIG { font:bold 14px Arial; }
+#spisok BIG IMG {
+	position:relative;
+	top:2px;
+	margin-left:3px;
+	}
+#spisok I {
+	font:italic 11px Arial;
+	line-height:95%;
+	color:#444;
+	}
+#spisok TH EM { /* дл€ поиска */
+	color:#33C;
+	text-decoration:underline;
+	cursor:pointer;
+	font:bold 12px Tahoma;
+	}
+
+
+
+
+
+
+
+#numbers {
+	font: 12px Tahoma;
+	margin:4px 0 0 30px;
+	}
+#numbers SPAN { font: 14px Century Gothic; }
+#numbers BUTTON {
+	padding:1px 2px 1px 2px;
+	font: 10px Tahoma;
+	border: #B4C8B8 solid 1px;
+	margin-left:4px;
+	}
+#numbers INPUT { width: 40px; }
+#numbers A {
+	padding:1px 3px 1px 3px;
+	font: 14px Tahoma;
+	border: #DDF5E2 solid 1px;
+	}
+#numbers A:hover {
+	border: #888 solid 1px;
+	text-decoration:none;
+	}
+#numbers U {
+	background: #FDFC9F;
+	font: bold 14px Tahoma;
+	color:#555;
+	padding:1px 4px 1px 4px;
+	border: #888 solid 1px;
+	text-decoration:none;
+	}
+#numbers EM { font:12px Tahoma; }
+#numbers H3 {
+	font:19px Arial Narrow;
+	color:#242;
+	padding:5px 0 5px 0;
+	text-decoration:underline;
+	}
+
+
+
+
+
+
+
+
+.primEdit {
+	display:none;
+	color:#444;
+	font:10px Tahoma;
+	border:#DDD solid 1px;
+	padding:1px 5px 1px 5px;
+	background:#FDD;
+	}
+.primEdit INPUT {
+	width:200px;
+	font:11px Tahoma;
+	}
+.primEdit P {
+	text-align:right;
+	padding-right:10px;
+	}
+.primEdit SPAN A {
+	margin-right:14px;
+	color:#844;
+	}
+.primEdit A:hover { text-decoration:underline; }
+
+
+
+
+
+
+
+
+#SetupHead {
+	margin:0px 10px 10px 10px;
+	background:#F0F8F0;
+	border:#CAE1D3 solid 1px;
+	padding:3px 0 1px 10px;
+	height:36px;
+	}
+#SetupHead IMG {
+	float:left;
+	margin-right:15px;
+	}
+#SetupHead P {
+	font: bold 15px Microsoft Sans Serif;
+	color:#676;
+	padding-top:6px;
+	}
+
+
+
+
+
+
+
+#errorView {
+	position:absolute;
+	top:400px;
+	left:300px;
+	border:#B99 solid 1px;
+	background:#FCC4C4;
+	padding:2px;
+	display:none;
+	}
+#errorView P {
+	border-right:#F8DBDB solid 1px;
+	border-bottom:#F8DBDB solid 1px;
+	padding:6px 8px 6px 8px;
+	background:#F66666;
+	color:#FFC;
+	font:12px Verdana;
+	}
+
+
+
+
+
+
+
+#mySel {
+	width:200px;
+	position:absolute;
+	}
+#mySel DL {
+	position:relative;
+	top:-10px;
+	border-top:#99B solid 1px;
+	border-left:#99B solid 1px;
+	border-right:#99B solid 1px;
+	cursor:pointer;
+	background:#FFF;
+	}
+#mySel B {
+	background:#EEF;
+	border-left:#BBC solid 1px;
+	padding:0 6px 0 6px;
+	color:#666;
+	font:bold 13px Century Gothic;
+	display:block;
+	height:17px;
+	}
+#mySel DT {
+	border-bottom:#99B solid 1px;
+	z-index:2;
+	}
+#mySel DD {
+	display:none;
+	color:#333;
+	font:12px Tahoma;
+	}
+#mySel A {
+	display:block;
+	padding:0 5px 0 5px;
+	border-bottom:#99B solid 1px;
+	color:#333;
+	font:12px Arial;
+	}
+#mySel EM {
+	color:#888;
+	font:11px Arial;
+	margin-left:6px;
+	}
+#mySel A:hover {
+	text-decoration:none;
+	background:#DDD;
+	}
+#mySel TABLE { border:none; }
+#mySel TABLE P {
+	background:#FFF;
+	padding-left:5px;
+	font:12px Arial;
+	height:17px;
+	}
+
+
+
+
+
+
+#StatusSelect { display:inline; }
+#StatusSelect BLOCKQUOTE {
+	position:absolute;
+	z-index:2;
+	}
+#StatusSelect DL {
+	display:none;
+	position:relative;
+	top:-2px;
+	width:200px;
+	border:#88A solid 1px;
+	background:#FFF;
+	padding:1px;
+	}
+#StatusSelect DD A {
+	display:block;
+	border:#FFF solid 1px;
+	font:12px Tahoma;
+	padding:2px 0px 2px 10px;
+	color:#555;
+	text-decoration:none;
+	}
+#StatusSelect DD A:hover { border:#336 solid 1px; }
+
+#StatusSelect CODE {
+	border:#FFF solid 2px;
+	padding:1px 20px 1px 20px;
+	font:bold 12px Verdana;
+	}
+#StatusSelect CODE A {
+	color:#446;
+	text-decoration:none;
+	}
+#StatusSelect CODE A:hover { color:#559; }
+#StatusSelect I {
+	font:italic 12px Arial;
+	color:#999;
+	}
+
+
+
+
+
+
+
+/* ћес€ц дл€ выбора начислени€ абонентки */
+#abSelectData { position:absolute; }
+#abSelectData DL {
+	position:relative;
+	top:-10px;
+	cursor:pointer;
+	border-top:#7AA solid 1px;
+	border-left:#7AA solid 1px;
+	border-right:#7AA solid 1px;
+	background-color:#FFF;
+/*
+	border-top:#ECF5EE solid 1px;
+	border-left:#ECF5EE solid 1px;
+	border-right:#ECF5EE solid 1px;
+*/
+	}
+#abSelectData DT {
+	font:bold 16px Arial;
+	color:#343;
+	text-align:center;
+	border-bottom:#7AA solid 1px;
+/*	border-bottom:#ECF5EE solid 1px;*/
+	}
+#abSelectData DD {
+	display:none;
+	}
+#abSelectData DD A {
+	display:block;
+	border-bottom:#7AA solid 1px;
+	text-align:left;
+	padding:0 0 1px 8px;
+	font:11px Verdana;
+	color:#555;
+	background:#F4F4F4;
+	}
+#abSelectData DD A:hover {
+	background:#7AA;
+	color:#FFF;
+	text-decoration:none;
+	}
+
+
