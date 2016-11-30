@@ -10,11 +10,11 @@ RewriteRule	^ab([0-9]+)/abonentka/$			/index.php?page=ab_abonentka&id=$1		[L]
 RewriteRule	^ab([0-9]+)/abonentka/([0-9]+)$	/index.php?page=ab_abReCalc&id=$1&re=$2 [L]
 RewriteRule	^ab([0-9]+)/uslugi$				/index.php?page=ab_uslugi&id=$1			[L]
 RewriteRule	^ab([0-9]+)/remont$	 			/index.php?page=ab_remont&id=$1		[L]
-RewriteRule	^ab([0-9]+)/remont/([0-9]+)$		/index.php?page=ab_remExec&id=$1&rem=$2	[L]
+RewriteRule	^ab([0-9]+)/remont/([0-9]+)$	/index.php?page=ab_remExec&id=$1&rem=$2	[L]
 RewriteRule	^ab([0-9]+)/remont/del$	 		/index.php?page=ab_remont&id=$1&del=1	[L]
-RewriteRule	^ab([0-9]+)/edit$		/index.php?page=ab_edit&id=$1	[L]
-RewriteRule	^ab([0-9]+)/edit/save$	/index.php?page=ab_edit&id=$1&save=1 [L]
-RewriteRule	^ab([0-9]+)/log$		/index.php?page=ab_log&id=$1	[L]
+RewriteRule	^ab([0-9]+)/edit$		        /index.php?page=ab_edit&id=$1	[L]
+RewriteRule	^ab([0-9]+)/edit/save$	        /index.php?page=ab_edit&id=$1&save=1 [L]
+RewriteRule	^ab([0-9]+)/log$		        /index.php?page=ab_log&id=$1	[L]
 
 
 RewriteRule	^my-setup$			/index.php?page=mySetup 		[L]
@@ -30,6 +30,7 @@ RewriteRule	^remont/wait$		/index.php?page=remont&status=2	[L]
 RewriteRule	^remont/executed$	/index.php?page=remont&status=1	[L]
 RewriteRule	^remont/deleted$	/index.php?page=remont&status=3	[L]
 
+RewriteRule	^bonus			    /index.php?page=bonus	 		[L]
 
 
 
