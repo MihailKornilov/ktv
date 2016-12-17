@@ -5,8 +5,26 @@ if(preg_match("|^[\d]+$|",$_GET['id']) and $KtvKassirDemo==0)
 	if($op->id)
 		{
 		$ktv->Query("update oplata set status=0,dtime_del=current_timestamp,admin_del=".$_SESSION['ks']." where id=".$_GET['id']);
-		$balans=$ktv->QRow("select balans from abonent where id=".$op->id_abonent)-$op->money;
-		$ktv->Query("update abonent set balans=".$balans." where id=".$op->id_abonent);
+
+		$sql = "SELECT SUM(`money`)
+				FROM `abonentka`
+				WHERE `id_abonent`=".$op->id_abonent;
+		$abMoney = $ktv->QRow($sql);
+
+		$sql = "SELECT
+					SUM(`money`) `money`,
+					SUM(`bonus_sum`) `bonus`
+				FROM `oplata`
+				WHERE `status`
+				  AND `id_abonent`=".$op->id_abonent;
+		$oplata = $ktv->QueryObjectOne($sql);
+
+		$sql = "UPDATE `abonent`
+				SET `balans`=".($oplata->money - $abMoney).",
+					`bonus_sum`=".$oplata->bonus."
+				WHERE id=".$op->id_abonent;
+		$ktv->Query($sql);
+
 		$ktv->Query("insert into abonent_log (action,value_new,id_abonent,id_admin) values ('Удаление платежа','Сумма: <B>".$op->money."</B>, баланс: ".$balans."',".$op->id_abonent.",".$_SESSION['ks'].")");
 		$msg="<DIV id=msgOk>Платёж удалён. <A HREF='/oplata'><B>OK</B></A>.</DIV>";
 		}

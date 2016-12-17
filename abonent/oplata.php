@@ -1,14 +1,61 @@
 <?php
-$abonent=$ktv->QueryObjectOne("select * from abonent where adres_gorod in (".$kassir->rule_gorod_allow.") and id=".(preg_match("|^[\d]+$|",$_GET['id'])?$_GET['id']:'0'));
+$abonent = $ktv->QueryObjectOne("select * from abonent where adres_gorod in (".$kassir->rule_gorod_allow.") and id=".(preg_match("|^[\d]+$|",$_GET['id'])?$_GET['id']:'0'));
 if($abonent->id)
 	{
-	if($_POST['oplataAdd'] and $KtvKassirDemo==0)
-		{
-		$abonent->balans+=$_POST['money'];
-		$ktv->Query("insert into oplata (money,id_abonent,tip,prim,admin_add,balans) values (".$_POST['money'].",".$_POST['oplataAdd'].",".$_POST['oplataTip'].",'".$_POST['prim']."',".$_SESSION['ks'].",".$abonent->balans.")");
-		$ktv->Query("update abonent set balans=".$abonent->balans." where id=".$_POST['oplataAdd']);
-		$ktv->Query("insert into abonent_log (action,value_new,id_abonent,id_admin) values ('Пополнение счёта','Сумма: <B>".$_POST['money']."</B>, баланс: ".$abonent->balans."',".$_POST['oplataAdd'].",".$_SESSION['ks'].")");
-		}
+	if($_POST['oplataAdd'] and $KtvKassirDemo==0) {
+		$balans = $abonent->balans + $_POST['money'];
+
+		$sql = "SELECT `bonus_procent` FROM `setup`";
+		$bonus_procent = $ktv->QRow($sql);
+		$bonus_sum = round($_POST['money'] * $bonus_procent / 100, 2);
+
+		$sql = "INSERT INTO `oplata` (
+					`money`,
+					`id_abonent`,
+					`tip`,
+					`prim`,
+					`admin_add`,
+					`balans`,
+					`bonus_procent`,
+					`bonus_sum`
+				) VALUES (
+					".$_POST['money'].",
+					".$abonent->id.",
+					".$_POST['oplataTip'].",
+					'".$_POST['prim']."',
+					".$_SESSION['ks'].",
+					".$balans.",
+					".$bonus_procent.",
+					".$bonus_sum."
+				)";
+		$ktv->Query($sql);
+
+		$sql = "SELECT SUM(`bonus_sum`)
+				FROM `oplata`
+				WHERE `status`
+				  AND `id_abonent`=".$abonent->id;
+		$bonus_sum = $ktv->QRow($sql);
+		$abonent->bonus_sum = $bonus_sum;
+
+		$sql = "UPDATE `abonent`
+				SET `balans`=".$balans.",
+					`bonus_sum`=".$bonus_sum."
+				WHERE id=".$abonent->id;
+		$ktv->Query($sql);
+
+		$sql = "INSERT INTO `abonent_log` (
+					`action`,
+					`value_new`,
+					`id_abonent`,
+					`id_admin`
+				) VALUES (
+					'Пополнение счёта',
+					'Сумма: <B>".$_POST['money']."</B>, баланс: ".$balans."',
+					".$abonent->id.",
+					".$_SESSION['ks']."
+				)";
+		$ktv->Query($sql);
+	}
 
 	$opTip=$ktv->QueryObjectArray("select * from oplata_tip order by sort");
 	$oplataTip="<DIV id=mySelOplata><DL>";
@@ -20,7 +67,7 @@ if($abonent->id)
 	
 
 	$oplata=$ktv->QueryObjectArray("select * from oplata where status=1 and id_abonent=".$abonent->id);
-	if(count($oplata)>0)
+	if(count($oplata))
 		{
 		$opSpisok="<TABLE cellspacing=0 cellpadding=0 id=spisok>";
 		$opSpisok.="<TH>&nbsp;";
@@ -35,20 +82,26 @@ if($abonent->id)
 		$tipName=$ktv->QueryPtPArray("select id,name from oplata_tip order by id");
 		$admin=$ktv->QueryPtPArray("select id,fio from admin order by id");
 
-		foreach($oplata as $n=>$op)
-			{
+		foreach($oplata as $n=>$op) {
+			$bonus = '';
+			if($op->bonus_procent)
+				$bonus =
+					' <span class="fs10 grey">'.
+						'+'.round($op->bonus_sum, 2).
+//						' (бонус '.$op->bonus_procent.'%)'.
+					'</span>';
+
 			$opSpisok.="<TR align=center bgcolor=#".$tipBg[$op->tip].">";
 			$opSpisok.="<TD align=right><U>".($n+1)."</U>";
-			$opSpisok.="<TD><B>".$op->money."</B>";
+			$opSpisok.="<TD><B class='fs11'>".$op->money."</B>".$bonus;
 			$opSpisok.="<TD>".$tipName[$op->tip];
 			$opSpisok.="<TD>".$op->balans;
 			$opSpisok.="<TD align=right>".Data($op->dtime_add);
 			$opSpisok.="<TD>".$admin[$op->admin_add];
 			$opSpisok.="<TD align=left>".($op->prim?$op->prim:'&nbsp;');
-			}
-		$opSpisok.="</TABLE>";
 		}
-	else $opSpisok="<DIV class=msgEmpty>Платежи не производились.</DIV>";
-	}
-else header("Location: /nopage");
-?>
+		$opSpisok.="</TABLE>";
+	} else
+		$opSpisok="<DIV class=msgEmpty>Платежи не производились.</DIV>";
+} else
+	header("Location: /nopage");

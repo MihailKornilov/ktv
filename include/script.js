@@ -1,4 +1,31 @@
-$(document).ready(ktvinit);
+var AJAX_MAIN = '../ajax.php',
+	bonusProcentSet = function(t, e) {//установка размера бонуса
+		var send = {
+			op:'setup_bonus_procent',
+			v:$('#bonus_procent').val()
+		};
+		$(t).addClass('busy');
+		$.post(AJAX_MAIN, send, function(res) {
+			t.removeClass('busy');
+			if(res.success) {
+				t.after('<b class="color090">сохранено</b>');
+				t.next().delay(1000)
+				 .fadeOut(200, function() {
+					 $(this).remove();
+				 });
+			} else
+				ErrorView(res.text, e);
+		}, 'json');
+	};
+
+$(document)
+	.ajaxError(function(event, request, settings) {
+		if(!request.responseText)
+			return;
+		alert(request.responseText);
+	})
+
+	.ready(ktvinit);
 
 function ktvinit()
 	{	
@@ -69,24 +96,25 @@ function imgCheckValue(IMG)
 	return arr1[0];
 	}
 
-function ErrorView(msg,e)
-	{
-	if(!$("#errorView").text())
-		{
-		e=e || window.event; 
-		$("BODY").append("<DIV></DIV>");
-		$("DIV:last").attr("id","errorView");
-		ERR=$("#errorView");
-		ERR.append("<P></P>")
-				.find("P").html("<B>Ошибка:</B> "+msg)
-				.end()
-				.css("top",e.clientY+document.body.scrollTop+3)
-				.css("left",e.clientX+document.body.scrollLeft+5)
-				.show("fast");
-		return false;
-		}
-	}
-function ErrorHide() { $("#errorView").fadeOut(400,function(){$(this).remove();}); }
+function ErrorView(msg, e) {
+	if($('#errorView').length)
+		$('#errorView').remove();
+
+	e = e || window.event;
+	$('BODY').append('<div id="errorView"></div>');
+	$("#errorView")
+		.append("<P></P>")
+		.find('p').html('<b>Ошибка:</b> ' + msg)
+		.end()
+		.css('top', e.clientY + document.body.scrollTop + 3)
+		.css('left', e.clientX + document.body.scrollLeft + 5)
+		.show('fast')
+		.delay(2000)
+		.fadeOut(600, function(){
+			$(this).remove();
+		});
+}
+function ErrorHide() {}
 
 
 

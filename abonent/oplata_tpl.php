@@ -3,8 +3,8 @@
 <HEAD>
 <TITLE> KTV: Интерфейс кассира - внесение платежа</TITLE>
 <META http-equiv="content-type" content="text/html; charset=windows-1251">
-<link href="/include/style.css" rel="stylesheet" type="text/css">
-<link href="/abonent/abonent.css" rel="stylesheet" type="text/css">
+<link href="/include/style.css?2" rel="stylesheet" type="text/css">
+<link href="/abonent/abonent.css?2" rel="stylesheet" type="text/css">
 <SCRIPT src="/include/script.js"></SCRIPT>
 
 <SCRIPT LANGUAGE="JavaScript">

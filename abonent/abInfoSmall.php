@@ -7,7 +7,7 @@ else
 	if($abonent->tel_sot) $telefon=$abonent->tel_sot;
 	}
 
-if($telefon) $telefon="<TR><TH>Телефоны:<TD>".$telefon;
+if(@$telefon) $telefon="<TR><TH>Телефоны:<TD>".$telefon;
 
 
 if($abonent->status_edit!='0000-00-00') $statusEdit="(<A HREF='javascript:' onclick=Calendar('".$abonent->status_edit."',event,'abSmallStatusSet');>".realday($abonent->status_edit)."</A>)";
@@ -24,7 +24,7 @@ if($ktv->QRow("select count(id) from remont where id_abonent=".$abonent->id." an
 ////// ------ ВЫЧИСЛЕНИЕ БАЛАНСА АБОНЕНТА --------- /////////////
 $abMoney=$ktv->QRow("select sum(money) from abonentka where id_abonent=".$abonent->id);
 $abOplata=$ktv->QRow("select sum(money) from oplata where status!=0 and id_abonent=".$abonent->id);
-$abonent->balans=$abOplata-$abMoney;
+$abonent->balans = $abOplata - $abMoney;
 $ktv->Query("update abonent set balans=".$abonent->balans." where id=".$abonent->id);
 ?>
 
@@ -65,6 +65,7 @@ function abSmallStatusSet(day)
 	<TR><TH>Адрес:		<TD><?php echo AdresSmall(0,$abonent->adres_gorod_name,$abonent->adres_ulica_name,$abonent->adres_dom_num,$abonent->adres_kv); ?>
 	<?php echo $telefon; ?>
 	<TR><TH>Баланс:		<TD id=<?php echo ($abonent->balans>=0?'bPlus':'bMinus'); ?>><B><?php echo $abonent->balans; ?></B>
+	<TR><TH>Сумма бонусов:<TD><?php echo round($abonent->bonus_sum, 2); ?>
 	<TR><TH>Статус:		<TD><?php echo $primImg.StatusSelect($abonent->status,'abSmallStatus',1); ?><I><?php echo $statusEdit; ?></I>
 												
 	<?php echo $primTxt; ?>

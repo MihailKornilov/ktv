@@ -5,7 +5,7 @@
 <META http-equiv="content-type" content="text/html; charset=windows-1251">
 <link href="/include/style.css" rel="stylesheet" type="text/css">
 <link href="/main/abNew/abNew.css" rel="stylesheet" type="text/css">
-<SCRIPT src="/include/script.js"></SCRIPT>
+<SCRIPT src="/include/script.js?2"></SCRIPT>
 <SCRIPT src="/main/abNew/abNew.js"></SCRIPT>
 
 </HEAD>
